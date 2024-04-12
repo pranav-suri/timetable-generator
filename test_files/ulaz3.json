@@ -1,0 +1,1517 @@
+{
+    "ClassroomTypes": {
+        "a": ["Atelje"],
+        "k": ["Kolarac"],
+        "n": ["U1", "U6", "U8", "U9", "U11"],
+        "r": ["U2", "U3", "U4", "U5", "U7"],
+        "s": ["Studio"]
+    },
+    "Classes": [
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "Lab",
+            "Teacher": "Milojkovic Branislav",
+            "Group": ["101"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "L",
+            "Teacher": "Burgic Stefan",
+            "Group": ["101"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Matematicka analiza",
+            "Type": "Theory",
+            "Teacher": "Jovanovic Irena",
+            "Group": ["101", "102"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Matematicka analiza",
+            "Type": "Lab",
+            "Teacher": "Jerotijevic Marija",
+            "Group": ["101", "102"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "Theory",
+            "Teacher": "Dimic Surla Bojana",
+            "Group": ["101", "102"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Diskretne strukture",
+            "Type": "Theory",
+            "Teacher": "Jovanovic Irena",
+            "Group": ["101", "102"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Diskretne strukture",
+            "Type": "Lab",
+            "Teacher": "Jerotijevic Marija",
+            "Group": ["101", "102"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Engleski 2",
+            "Type": "Theory",
+            "Teacher": "Cuk Bojana",
+            "Group": ["101", "102"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Pismeno i usmeno izrazavanje",
+            "Type": "Theory",
+            "Teacher": "Markovic Mirjana",
+            "Group": ["101", "102"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "Lab",
+            "Teacher": "Milojkovic Branislav",
+            "Group": ["102"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "L",
+            "Teacher": "Burgic Stefan",
+            "Group": ["102"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "Lab",
+            "Teacher": "Tomic Milan",
+            "Group": ["103"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "L",
+            "Teacher": "Vignjevic Mihailo",
+            "Group": ["103"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Matematicka analiza",
+            "Type": "Theory",
+            "Teacher": "Jovanovic Irena",
+            "Group": ["103", "104"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Matematicka analiza",
+            "Type": "Lab",
+            "Teacher": "Jerotijevic Marija",
+            "Group": ["103", "104"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "Theory",
+            "Teacher": "Dimic Surla Bojana",
+            "Group": ["103", "104"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Diskretne strukture",
+            "Type": "Lab",
+            "Teacher": "Jerotijevic Marija",
+            "Group": ["103", "104"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Diskretne strukture",
+            "Type": "Theory",
+            "Teacher": "Jovanovic Irena",
+            "Group": ["103", "104"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Engleski 2",
+            "Type": "Theory",
+            "Teacher": "Cuk Bojana",
+            "Group": ["103", "104"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Pismeno i usmeno izrazavanje",
+            "Type": "Theory",
+            "Teacher": "Markovic Mirjana",
+            "Group": ["103", "104"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "L",
+            "Teacher": "Dresevic Nevena",
+            "Group": ["104"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "Lab",
+            "Teacher": "Stancic Aleksandar",
+            "Group": ["104"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "L",
+            "Teacher": "Vignjevic Mihailo",
+            "Group": ["105"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "Lab",
+            "Teacher": "Stancic Aleksandar",
+            "Group": ["105"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Matematicka analiza",
+            "Type": "Theory",
+            "Teacher": "Jovanovic Irena",
+            "Group": ["105", "106", "107"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Matematicka analiza",
+            "Type": "Lab",
+            "Teacher": "Jerotijevic Marija",
+            "Group": ["105", "106", "107"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "Theory",
+            "Teacher": "Dimic Surla Bojana",
+            "Group": ["105", "106", "107"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Diskretne strukture",
+            "Type": "Theory",
+            "Teacher": "Jovanovic Irena",
+            "Group": ["105", "106", "107"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Diskretne strukture",
+            "Type": "Lab",
+            "Teacher": "Jerotijevic Marija",
+            "Group": ["105", "106", "107"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Pismeno i usmeno izrazavanje",
+            "Type": "Theory",
+            "Teacher": "Markovic Mirjana",
+            "Group": ["105", "106", "107"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "L",
+            "Teacher": "Ciric Bogdan",
+            "Group": ["106"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "Lab",
+            "Teacher": "Zirojevic Nemanja",
+            "Group": ["106"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Engleski 2",
+            "Type": "Theory",
+            "Teacher": "Cuk Bojana",
+            "Group": ["106"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "Lab",
+            "Teacher": "Stancic Aleksandar",
+            "Group": ["107"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Objektno orijentisano programiranje",
+            "Type": "L",
+            "Teacher": "Dresevic Nevena",
+            "Group": ["107"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Engleski 2",
+            "Type": "Theory",
+            "Teacher": "Cuk Bojana",
+            "Group": ["107", "105"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Muzicka produkcija 1",
+            "Type": "Theory",
+            "Teacher": "Ognjanovic Ivana",
+            "Group": ["1d1"],
+            "ClassroomType": "s",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Muzicka produkcija 1",
+            "Type": "Lab",
+            "Teacher": "Ognjanovic Ivana",
+            "Group": ["1d1"],
+            "ClassroomType": "s",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Engleski 2",
+            "Type": "Theory",
+            "Teacher": "Cuk Bojana",
+            "Group": ["1d1", "1d2", "1d3"],
+            "ClassroomType": "a",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Ilustracija",
+            "Type": "Theory",
+            "Teacher": "Djuric Milan",
+            "Group": ["1d1", "1d2", "1d3"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Ilustracija",
+            "Type": "Lab",
+            "Teacher": "Djuric Milan",
+            "Group": ["1d1", "1d2", "1d3"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Dizajn i informacione tehnologije",
+            "Type": "Theory",
+            "Teacher": "Telarovic Rosana",
+            "Group": ["1d1", "1d2", "1d3"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Dizajn i informacione tehnologije",
+            "Type": "Lab",
+            "Teacher": "Bujic Predrag",
+            "Group": ["1d1", "1d2", "1d3"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Muzicka produkcija 1",
+            "Type": "Lab",
+            "Teacher": "Ognjanovic Ivana",
+            "Group": ["1d2"],
+            "ClassroomType": "s",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Muzicka produkcija 1",
+            "Type": "Theory",
+            "Teacher": "Ognjanovic Ivana",
+            "Group": ["1d2"],
+            "ClassroomType": "s",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Muzicka produkcija 1",
+            "Type": "Theory",
+            "Teacher": "Ognjanovic Ivana",
+            "Group": ["1d3"],
+            "ClassroomType": "s",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Muzicka produkcija 1",
+            "Type": "Lab",
+            "Teacher": "Ognjanovic Ivana",
+            "Group": ["1d3"],
+            "ClassroomType": "s",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Administracija i odrzavanje sistema 2",
+            "Type": "Theory",
+            "Teacher": "Lale Sinisa",
+            "Group": ["1s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Administracija i odrzavanje sistema 2",
+            "Type": "Theory",
+            "Teacher": "Lale Sinisa",
+            "Group": ["1s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Osnovi informacionih tehnologija",
+            "Type": "Lab",
+            "Teacher": "Zahorjanski Miroljub",
+            "Group": ["1s1"],
+            "ClassroomType": "r",
+            "Duration": "1"
+        },
+        {
+            "Subject": "Poslovni softver",
+            "Type": "Theory",
+            "Teacher": "Mijatovic Igor",
+            "Group": ["1s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Poslovni softver",
+            "Type": "Theory",
+            "Teacher": "Mijatovic Igor",
+            "Group": ["1s1"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Engleski 2",
+            "Type": "Theory",
+            "Teacher": "Vrbica-Matejic Vera",
+            "Group": ["1s1", "1s2"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Pismeno i usmeno izrazavanje",
+            "Type": "Theory",
+            "Teacher": "Markovic Mirjana",
+            "Group": ["1s1", "1s2"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Osnovi informacionih tehnologija",
+            "Type": "Theory",
+            "Teacher": "Zahorjanski Miroljub",
+            "Group": ["1s1", "1s2"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Administracija i odrzavanje sistema 2",
+            "Type": "Theory",
+            "Teacher": "Seslija Ognjen",
+            "Group": ["1s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Administracija i odrzavanje sistema 2",
+            "Type": "Theory",
+            "Teacher": "Seslija Ognjen",
+            "Group": ["1s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Osnovi informacionih tehnologija",
+            "Type": "Lab",
+            "Teacher": "Zahorjanski Miroljub",
+            "Group": ["1s2"],
+            "ClassroomType": "r",
+            "Duration": "1"
+        },
+        {
+            "Subject": "Poslovni softver",
+            "Type": "Theory",
+            "Teacher": "Mijatovic Igor",
+            "Group": ["1s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Poslovni softver",
+            "Type": "Theory",
+            "Teacher": "Mijatovic Igor",
+            "Group": ["1s2"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Operativni sistemi",
+            "Type": "Lab",
+            "Teacher": "Veniger Marko",
+            "Group": ["201"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarske mreze",
+            "Type": "Lab",
+            "Teacher": "Galic Luka",
+            "Group": ["201"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Upravljanje informacijama",
+            "Type": "Lab",
+            "Teacher": "Markovic Ana",
+            "Group": ["201"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Dizajn i analiza algoritama",
+            "Type": "Lab",
+            "Teacher": "Bakarec Bogdan",
+            "Group": ["201"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Upravljanje informacijama",
+            "Type": "Theory",
+            "Teacher": "Perisic Branko",
+            "Group": ["201", "202"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Dizajn i analiza algoritama",
+            "Type": "Theory",
+            "Teacher": "Urosevic Dragan",
+            "Group": ["201", "202"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Racunarske mreze",
+            "Type": "Theory",
+            "Teacher": "Babic Djorde",
+            "Group": ["201", "202", "203", "204", "205"],
+            "ClassroomType": "k",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Operativni sistemi",
+            "Type": "Theory",
+            "Teacher": "Milinkovic Stevan",
+            "Group": ["201", "202", "203", "204", "205", "210", "211"],
+            "ClassroomType": "k",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Operativni sistemi",
+            "Type": "Lab",
+            "Teacher": "Veniger Marko",
+            "Group": ["202"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarske mreze",
+            "Type": "Lab",
+            "Teacher": "Galic Luka",
+            "Group": ["202"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Upravljanje informacijama",
+            "Type": "Lab",
+            "Teacher": "Markovic Ana",
+            "Group": ["202"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Dizajn i analiza algoritama",
+            "Type": "Lab",
+            "Teacher": "Bakarec Bogdan",
+            "Group": ["202"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Operativni sistemi",
+            "Type": "Lab",
+            "Teacher": "Veniger Marko",
+            "Group": ["203"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarske mreze",
+            "Type": "Lab",
+            "Teacher": "Vucicevic Nemanja",
+            "Group": ["203"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Upravljanje informacijama",
+            "Type": "Lab",
+            "Teacher": "Markovic Ana",
+            "Group": ["203"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Dizajn i analiza algoritama",
+            "Type": "Lab",
+            "Teacher": "Draskic Radojica",
+            "Group": ["203"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Upravljanje informacijama",
+            "Type": "Theory",
+            "Teacher": "Perisic Branko",
+            "Group": ["203", "204", "205"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Dizajn i analiza algoritama",
+            "Type": "Theory",
+            "Teacher": "Urosevic Dragan",
+            "Group": ["203", "204", "205"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Operativni sistemi",
+            "Type": "Lab",
+            "Teacher": "Veniger Marko",
+            "Group": ["204"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarske mreze",
+            "Type": "Lab",
+            "Teacher": "Vucicevic Nemanja",
+            "Group": ["204"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Upravljanje informacijama",
+            "Type": "Lab",
+            "Teacher": "Markovic Ana",
+            "Group": ["204"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Dizajn i analiza algoritama",
+            "Type": "Lab",
+            "Teacher": "Draskic Radojica",
+            "Group": ["204"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Operativni sistemi",
+            "Type": "Lab",
+            "Teacher": "Milojkovic Branislav",
+            "Group": ["205"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarske mreze",
+            "Type": "Lab",
+            "Teacher": "Mitrovic Marko",
+            "Group": ["205"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Upravljanje informacijama",
+            "Type": "Lab",
+            "Teacher": "Markovic Ana",
+            "Group": ["205"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Dizajn i analiza algoritama",
+            "Type": "Lab",
+            "Teacher": "Draskic Radojica",
+            "Group": ["205"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Operativni sistemi",
+            "Type": "Lab",
+            "Teacher": "Milojkovic Branislav",
+            "Group": ["210"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarske mreze",
+            "Type": "Lab",
+            "Teacher": "Mitrovic Marko",
+            "Group": ["210"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Digitalne komunikacije",
+            "Type": "Lab",
+            "Teacher": "Jovanovic Miljana",
+            "Group": ["210"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Racunarske mreze",
+            "Type": "Theory",
+            "Teacher": "Bojovic Petar",
+            "Group": ["210", "211"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Napredna matematicka analiza",
+            "Type": "Theory",
+            "Teacher": "Filipovic Milanka",
+            "Group": ["210", "211"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Napredna matematicka analiza",
+            "Type": "Lab",
+            "Teacher": "Filipovic Milanka",
+            "Group": ["210", "211"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Digitalne komunikacije",
+            "Type": "Theory",
+            "Teacher": "Vucic Desimir",
+            "Group": ["210", "211"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Operativni sistemi",
+            "Type": "Lab",
+            "Teacher": "Veniger Marko",
+            "Group": ["211"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarske mreze",
+            "Type": "Lab",
+            "Teacher": "Mitrovic Marko",
+            "Group": ["211"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Digitalne komunikacije",
+            "Type": "Lab",
+            "Teacher": "Jovanovic Miljana",
+            "Group": ["211"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Engleski jezik 4",
+            "Type": "Theory",
+            "Teacher": "Cuk Bojana",
+            "Group": ["2d1"],
+            "ClassroomType": "a",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Grafiicki dizajn 1",
+            "Type": "Theory",
+            "Teacher": "Malesevic Nenad",
+            "Group": ["2d1"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Grafiicki dizajn 1",
+            "Type": "Lab",
+            "Teacher": "Malesevic Nenad",
+            "Group": ["2d1"],
+            "ClassroomType": "a",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Muzicka produkcija 2",
+            "Type": "Theory",
+            "Teacher": "Ognjanovic Ivana",
+            "Group": ["2d1"],
+            "ClassroomType": "s",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Muzicka produkcija 2",
+            "Type": "Lab",
+            "Teacher": "Ognjanovic Ivana",
+            "Group": ["2d1"],
+            "ClassroomType": "s",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Prostor i oblik",
+            "Type": "Theory",
+            "Teacher": "Telarovic Rosana",
+            "Group": ["2d1"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Prostor i oblik",
+            "Type": "Lab",
+            "Teacher": "Telarovic Rosana",
+            "Group": ["2d1"],
+            "ClassroomType": "a",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarske komunikacije",
+            "Type": "Lab",
+            "Teacher": "Babovic Ivan",
+            "Group": ["2s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Programiranje WEB aplikacija",
+            "Type": "Theory",
+            "Teacher": "Radosavljevic Nemanja",
+            "Group": ["2s1"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Programiranje WEB aplikacija",
+            "Type": "Lab",
+            "Teacher": "Mihajlovic Todor",
+            "Group": ["2s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Interakcija covek racunar",
+            "Type": "Lab",
+            "Teacher": "Mijatovic Igor",
+            "Group": ["2s1"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Elektronsko poslovanje",
+            "Type": "Lab",
+            "Teacher": "Radosavljevic Nemanja",
+            "Group": ["2s1"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Racunarske komunikacije",
+            "Type": "Theory",
+            "Teacher": "Babovic Ivan",
+            "Group": ["2s1", "2s2"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Elektronsko poslovanje",
+            "Type": "Theory",
+            "Teacher": "Popovic Snezana",
+            "Group": ["2s1", "2s2"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarske komunikacije",
+            "Type": "Lab",
+            "Teacher": "Babovic Ivan",
+            "Group": ["2s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Programiranje WEB aplikacija",
+            "Type": "Lab",
+            "Teacher": "Mihajlovic Todor",
+            "Group": ["2s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Programiranje WEB aplikacija",
+            "Type": "Theory",
+            "Teacher": "Radosavljevic Nemanja",
+            "Group": ["2s2"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Interakcija covek racunar",
+            "Type": "Lab",
+            "Teacher": "Mijatovic Igor",
+            "Group": ["2s2"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Elektronsko poslovanje",
+            "Type": "Lab",
+            "Teacher": "Radosavljevic Nemanja",
+            "Group": ["2s2"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Programski prevodioci",
+            "Type": "Theory",
+            "Teacher": "Vujosevic Dusan",
+            "Group": [
+                "301",
+                "302",
+                "303",
+                "304",
+                "305",
+                "306",
+                "307",
+                "308",
+                "309",
+                "309a"
+            ],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Interakcija covek racunar",
+            "Type": "Theory",
+            "Teacher": "Vujosevic Dusan",
+            "Group": [
+                "301",
+                "302",
+                "303",
+                "304",
+                "305",
+                "306",
+                "307",
+                "308",
+                "309",
+                "309a",
+                "2s1",
+                "2s2"
+            ],
+            "ClassroomType": "k",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Masinsko ucenje",
+            "Type": "Theory",
+            "Teacher": "Ilic Nemanja",
+            "Group": ["301", "302", "306", "308"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Interakcija covek racunar",
+            "Type": "Lab",
+            "Teacher": "Radosavljevic Nemanja",
+            "Group": ["301", "303", "304", "305"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "WEB programiranje",
+            "Type": "Theory",
+            "Teacher": "Vidakovic MIlan",
+            "Group": [
+                "301",
+                "303",
+                "304",
+                "307",
+                "308",
+                "309",
+                "314",
+                "319",
+                "322"
+            ],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "WEB programiranje",
+            "Type": "Lab",
+            "Teacher": "Gavrilovic Vuk",
+            "Group": ["301", "303", "304", "307", "322"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Programski prevodioci",
+            "Type": "Lab",
+            "Teacher": "Stankovic Ivana",
+            "Group": ["301", "305", "308"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Softverske komponente",
+            "Type": "Theory",
+            "Teacher": "Dimic Surla Bojana",
+            "Group": ["301", "307", "309a"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Softverske komponente",
+            "Type": "Lab",
+            "Teacher": "Radovic Mihailo",
+            "Group": ["301", "307", "309a"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Masinsko ucenje",
+            "Type": "Lab",
+            "Teacher": "Jovanovic Nikola",
+            "Group": ["301", "308", "302", "306"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Genetski algoritmi",
+            "Type": "Lab",
+            "Teacher": "Tomic Milan",
+            "Group": ["302", "303"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Programski prevodioci",
+            "Type": "Lab",
+            "Teacher": "Stankovic Ivana",
+            "Group": ["302", "303", "304"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Genetski algoritmi",
+            "Type": "Theory",
+            "Teacher": "Vasiljevic Jelena",
+            "Group": ["302", "303", "305", "306", "309", "309a"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Funkcionalno programiranje",
+            "Type": "Theory",
+            "Teacher": "Dimic Surla Bojana",
+            "Group": ["302", "304", "309"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Funkcionalno programiranje",
+            "Type": "Lab",
+            "Teacher": "Ciganovic Igor",
+            "Group": ["302", "304", "309"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Interakcija covek racunar",
+            "Type": "Lab",
+            "Teacher": "Radosavljevic Nemanja",
+            "Group": ["302", "307", "306"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Razvoj mobilnih aplikacija",
+            "Type": "Theory",
+            "Teacher": "Zirojevic Nemanja",
+            "Group": ["303", "304", "305", "306", "307", "308", "313", "314"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Razvoj mobilnih aplikacija",
+            "Type": "Lab",
+            "Teacher": "Kojadinovic Dragoljub",
+            "Group": ["303", "304", "305", "306", "307", "308", "313", "314"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Modelovanje i simulacija",
+            "Type": "Theory",
+            "Teacher": "Jankovic Radomir",
+            "Group": ["305", "319", "323", "309a", "324"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Programski prevodioci",
+            "Type": "Lab",
+            "Teacher": "Stankovic Ivana",
+            "Group": ["306", "307", "309", "309a"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Interakcija covek racunar",
+            "Type": "Lab",
+            "Teacher": "Radosavljevic Nemanja",
+            "Group": ["308", "309", "309a"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "WEB programiranje",
+            "Type": "Lab",
+            "Teacher": "Gavrilovic Vuk",
+            "Group": ["308", "309", "314", "319"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Genetski algoritmi",
+            "Type": "Lab",
+            "Teacher": "Tomic Milan",
+            "Group": ["309", "309a", "305", "306"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Modelovanje i simulacija",
+            "Type": "Lab",
+            "Teacher": "Jankovic Radomir",
+            "Group": ["309a", "324", "305"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Bezbednost mreza",
+            "Type": "Theory",
+            "Teacher": "Babic Djorde",
+            "Group": ["313", "314", "319", "323", "324", "322"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Bezbednost mreza",
+            "Type": "Lab",
+            "Teacher": "Bojovic Petar",
+            "Group": ["313", "314", "319", "323", "324", "322"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Kompresija podataka",
+            "Type": "Theory",
+            "Teacher": "Vukotic Selena",
+            "Group": ["313", "314", "319", "323", "324", "322"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Kompresija podataka",
+            "Type": "Lab",
+            "Teacher": "Vukotic Selena",
+            "Group": ["313", "314", "319", "323", "324", "322"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Kodovanje i teorija informacija",
+            "Type": "Theory",
+            "Teacher": "Vucic Desimir",
+            "Group": ["313", "314", "319", "323", "324", "322"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Kodovanje i teorija informacija",
+            "Type": "Lab",
+            "Teacher": "Jovanovic Miljana",
+            "Group": ["313", "314", "319", "323", "324", "322"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Uvod u robotiku",
+            "Type": "Theory",
+            "Teacher": "Jovanovic Milos",
+            "Group": ["313", "323"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Uvod u robotiku",
+            "Type": "Lab",
+            "Teacher": "Jovanovic Miljana",
+            "Group": ["313", "323"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Modelovanje i simulacija",
+            "Type": "Lab",
+            "Teacher": "Jankovic Radomir",
+            "Group": ["319", "323"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Data centar infrastruktura",
+            "Type": "Theory",
+            "Teacher": "Martic Goran",
+            "Group": ["324", "322"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Data centar infrastruktura",
+            "Type": "Lab",
+            "Teacher": "Martic Goran",
+            "Group": ["324", "322"],
+            "ClassroomType": "r",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Graficki dizajn 2",
+            "Type": "Theory",
+            "Teacher": "Malesevic Nenad",
+            "Group": ["3d1"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Graficki dizajn 2",
+            "Type": "Lab",
+            "Teacher": "Malesevic Nenad",
+            "Group": ["3d1"],
+            "ClassroomType": "a",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Muzicka produkcija 3",
+            "Type": "Theory",
+            "Teacher": "Ognjanovic Ivana",
+            "Group": ["3d1"],
+            "ClassroomType": "s",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Muzicka produkcija 3",
+            "Type": "Lab",
+            "Teacher": "Ognjanovic Ivana",
+            "Group": ["3d1"],
+            "ClassroomType": "s",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarska animacija",
+            "Type": "Theory",
+            "Teacher": "Djuric Milan",
+            "Group": ["3d1"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Racunarska animacija",
+            "Type": "Lab",
+            "Teacher": "Djuric Milan",
+            "Group": ["3d1"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Scenario i knjiga snimanja",
+            "Type": "Theory",
+            "Teacher": "Stetin Darko",
+            "Group": ["3d1"],
+            "ClassroomType": "a",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Scenario i knjiga snimanja",
+            "Type": "Lab",
+            "Teacher": "Stetin Darko",
+            "Group": ["3d1"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Upravljanje i odrzavanje Windows Server okruzenja",
+            "Type": "Theory",
+            "Teacher": "Lale Sinisa",
+            "Group": ["3s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Upravljanje i odrzavanje Windows Server okruzenja",
+            "Type": "Theory",
+            "Teacher": "Lale Sinisa",
+            "Group": ["3s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Implementiranje Microsoft ISA servera",
+            "Type": "Theory",
+            "Teacher": "Lale Sinisa",
+            "Group": ["3s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Implementiranje Microsoft ISA servera",
+            "Type": "Theory",
+            "Teacher": "Lale Sinisa",
+            "Group": ["3s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Prakticne tehnike zastite u IP mrezama",
+            "Type": "Theory",
+            "Teacher": "Bojovic Petar",
+            "Group": ["3s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Prakticne tehnike zastite u IP mrezama",
+            "Type": "Lab",
+            "Teacher": "Jankovski Ivan",
+            "Group": ["3s1"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Istorija racunarstva",
+            "Type": "Theory",
+            "Teacher": "Zahorjanski Miroljub",
+            "Group": ["3s1", "3s2"],
+            "ClassroomType": "n",
+            "Duration": "2"
+        },
+        {
+            "Subject": "Razvoj infrastrukture i servisa u oblaku",
+            "Type": "Theory",
+            "Teacher": "Miletic Misa",
+            "Group": ["3s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Razvoj infrastrukture i servisa u oblaku",
+            "Type": "Lab",
+            "Teacher": "Miletic Misa",
+            "Group": ["3s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Razvoj web aplikacija i servisa",
+            "Type": "Theory",
+            "Teacher": "Markovic Nemanja",
+            "Group": ["3s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Razvoj web aplikacija i servisa",
+            "Type": "Theory",
+            "Teacher": "Markovic Nemanja",
+            "Group": ["3s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Microsoft tehnologije za pristup podacima",
+            "Type": "Theory",
+            "Teacher": "Milosavljevic Milos",
+            "Group": ["3s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Microsoft tehnologije za pristup podacima",
+            "Type": "Theory",
+            "Teacher": "Milosavljevic Milos",
+            "Group": ["3s2"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Konkurentni i distribuirani sistemi",
+            "Type": "Lab",
+            "Teacher": "Milojkovic Branislav",
+            "Group": ["401"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Softversko inzenjerstvo",
+            "Type": "Lab",
+            "Teacher": "Markovic Ana",
+            "Group": ["401"],
+            "ClassroomType": "r",
+            "Duration": "4"
+        },
+        {
+            "Subject": "Softversko inzenjerstvo",
+            "Type": "Theory",
+            "Teacher": "Perisic Branko",
+            "Group": ["401", "402"],
+            "ClassroomType": "n",
+            "Duration": "4"
+        },
+        {
+            "Subject": "Teorija algoritama, automata i jezika",
+            "Type": "Theory",
+            "Teacher": "Jovanovic Jelena",
+            "Group": ["401", "402"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Teorija algoritama, automata i jezika",
+            "Type": "Lab",
+            "Teacher": "Tomic Milan",
+            "Group": ["401", "402"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Konkurentni i distribuirani sistemi",
+            "Type": "Theory",
+            "Teacher": "Milinkovic Stevan",
+            "Group": ["401", "402", "405"],
+            "ClassroomType": "n",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Konkurentni i distribuirani sistemi",
+            "Type": "Lab",
+            "Teacher": "Milojkovic Branislav",
+            "Group": ["402"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Softversko inzenjerstvo",
+            "Type": "Lab",
+            "Teacher": "Markovic Ana",
+            "Group": ["402"],
+            "ClassroomType": "r",
+            "Duration": "4"
+        },
+        {
+            "Subject": "Konkurentni i distribuirani sistemi",
+            "Type": "Lab",
+            "Teacher": "Milojkovic Branislav",
+            "Group": ["405"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Digitalna obrada signala",
+            "Type": "Theory",
+            "Teacher": "Babic Djorde",
+            "Group": ["405"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Digitalna obrada signala",
+            "Type": "Lab",
+            "Teacher": "Jovanovic Miljana",
+            "Group": ["405"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Namenski racunarski sistemi",
+            "Type": "Theory",
+            "Teacher": "Jovanovic Milos",
+            "Group": ["405"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        },
+        {
+            "Subject": "Namenski racunarski sistemi",
+            "Type": "Lab",
+            "Teacher": "Stambolovic Bogdana",
+            "Group": ["405"],
+            "ClassroomType": "r",
+            "Duration": "3"
+        }
+    ]
+}
