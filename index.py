@@ -10,8 +10,8 @@ cursor = cnx.cursor(dictionary=True)
 
 cursor.execute("""
     SELECT
-    t.id AS teacherId, t.teacherName, 
-    s.id AS subjectId, s.subjectName, s.isLab
+    t.id AS teacherId,
+    s.id AS subjectId, s.isLab
     FROM teach
     INNER JOIN teacher t ON teach.TeacherId = t.id
     INNER JOIN subject s ON teach.SubjectId = s.id
@@ -28,13 +28,31 @@ cursor.execute("""
 classrooms = cursor.fetchall()
 
 cursor.execute("""
-    SELECT division.id AS divisionId, division.divisionName, subdiv.id AS subdivisionId, subdiv.subdivisionName
+    SELECT division.id AS divisionId,subdiv.id AS subdivisionId
     FROM division
     LEFT JOIN subdivision subdiv ON division.id = subdiv.divisionId
     WHERE division.departmentId = 2
 """)
 
 subdivisions = cursor.fetchall()
+
+#Formatting subdivisions
+subdivisions_by_division = {}
+
+# Organize the subdivisions data into the desired format
+for subdivision in subdivisions:
+    division_id = subdivision["divisionId"]
+    subdivision_id = subdivision["subdivisionId"]
+    
+    # If the division is not yet in the dictionary, add it with an empty list
+    if division_id not in subdivisions_by_division:
+        subdivisions_by_division[division_id] = {"divisionId": division_id, "subdivisionIds": []}
+    
+    # Add the subdivision ID to the list of subdivision IDs for the division
+    subdivisions_by_division[division_id]["subdivisionIds"].append(subdivision_id)
+
+# Convert the dictionary values to a list
+formatted_subdivisions = list(subdivisions_by_division.values())
 
 ClassroomTypes = {
         "Lab": [],
@@ -46,9 +64,6 @@ for classroom in classrooms:
         ClassroomTypes["Lab"].append(str(classroom['id']))
     else:
         ClassroomTypes["notLab"].append(str(classroom['id']))
-
-# Below algorithm assummes we are talking about a departmnent
-# There will be more complex in case of multiple departments and electives
 
 # Count number of divisions
 divisionSet = {subdivision["divisionId"] for subdivision in subdivisions}
@@ -66,10 +81,11 @@ for teach in teaches:
         else:
             notLabTeachersBySubject[subjectId] = [teach["teacherId"]]
 
-# Increase number of teacher entries randomly to equal the number of divisions
+
+# Increase number of teacher entries to equal the number of divisions
 for subjectId, teacherIds in notLabTeachersBySubject.items():
     if len(teacherIds) < numberOfDivisions:
-        # Randomly select teachers to increase the count
+        # Select teachers to increase the count
         numOfSubjectTeachers = len(teacherIds)
         for i in range(numberOfDivisions - numOfSubjectTeachers):
             teaches.append({
@@ -105,22 +121,45 @@ for subjectId, teacherIds in labTeachersBySubject.items():
                 "subjectId": subjectId,
                 "isLab": True
             })
+    
 
 Classes = []
+teaches.sort(key=lambda x: int(x["subjectId"]))
+
 for teach in teaches:
-    Classes.append({
+    Class = {
             "Subject": str(teach['subjectId']),
             "Type": "Lab" if teach["isLab"] else "Theory",
             "Teacher": str(teach["teacherId"]),
             "ClassroomType": "Lab" if teach["isLab"] else "notLab",
             "Duration": "2" if teach["isLab"] else "1",
             "Group": []
-        })
+        }
+    Classes.append(Class)
+    
+LabClasses = []
+notLabClasses = []
+for c in Classes:
+    if c["ClassroomType"] == "Lab":
+        LabClasses.append(c)
+    else:
+        notLabClasses.append(c)
+
+# Assign one subdivision to each labClass using subdivisions array
+for i, c in enumerate(LabClasses):
+    # Assign a division from formatted_subdivisions array to the class
+    c["Group"].append(str(subdivisions[i % len(subdivisions)]["subdivisionId"]))
+
+for i, c in enumerate(notLabClasses):
+    # Assign a division from formatted_subdivisions array to the class
+    result = list(map(str, formatted_subdivisions[i % len(formatted_subdivisions)]["subdivisionIds"]))
+    c["Group"].extend(result)
+
+Classes = LabClasses + notLabClasses
 # Sort the classes by subjectId
 Classes.sort(key=lambda x: int(x["Subject"]))
 
 # TODO: Add the groups to the classes
-
 
 final = {"ClassroomTypes": ClassroomTypes, "Classes": Classes}
 print(final)

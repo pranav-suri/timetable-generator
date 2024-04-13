@@ -10,7 +10,7 @@
             "Teacher": "1",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["4", "5", "6"]
         },
         {
             "Subject": "1",
@@ -18,7 +18,7 @@
             "Teacher": "2",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["13", "14", "15"]
         },
         {
             "Subject": "1",
@@ -26,7 +26,7 @@
             "Teacher": "1",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["22", "23", "24"]
         },
         {
             "Subject": "2",
@@ -34,7 +34,7 @@
             "Teacher": "1",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["4", "5", "6"]
         },
         {
             "Subject": "2",
@@ -42,7 +42,7 @@
             "Teacher": "2",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["13", "14", "15"]
         },
         {
             "Subject": "2",
@@ -50,7 +50,7 @@
             "Teacher": "1",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["22", "23", "24"]
         },
         {
             "Subject": "3",
@@ -58,7 +58,7 @@
             "Teacher": "3",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["4", "5", "6"]
         },
         {
             "Subject": "3",
@@ -66,7 +66,7 @@
             "Teacher": "4",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["13", "14", "15"]
         },
         {
             "Subject": "3",
@@ -74,7 +74,7 @@
             "Teacher": "5",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["22", "23", "24"]
         },
         {
             "Subject": "4",
@@ -82,7 +82,7 @@
             "Teacher": "6",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["4", "5", "6"]
         },
         {
             "Subject": "4",
@@ -90,7 +90,7 @@
             "Teacher": "7",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["13", "14", "15"]
         },
         {
             "Subject": "4",
@@ -98,7 +98,7 @@
             "Teacher": "8",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["22", "23", "24"]
         },
         {
             "Subject": "5",
@@ -106,7 +106,7 @@
             "Teacher": "6",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["4"]
         },
         {
             "Subject": "5",
@@ -114,7 +114,7 @@
             "Teacher": "9",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["5"]
         },
         {
             "Subject": "5",
@@ -122,7 +122,7 @@
             "Teacher": "10",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["6"]
         },
         {
             "Subject": "5",
@@ -130,7 +130,7 @@
             "Teacher": "11",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["13"]
         },
         {
             "Subject": "5",
@@ -138,7 +138,7 @@
             "Teacher": "12",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["14"]
         },
         {
             "Subject": "5",
@@ -146,7 +146,7 @@
             "Teacher": "13",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["15"]
         },
         {
             "Subject": "5",
@@ -154,7 +154,7 @@
             "Teacher": "14",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["22"]
         },
         {
             "Subject": "5",
@@ -162,7 +162,7 @@
             "Teacher": "6",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["23"]
         },
         {
             "Subject": "5",
@@ -170,7 +170,7 @@
             "Teacher": "9",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["24"]
         },
         {
             "Subject": "6",
@@ -178,7 +178,7 @@
             "Teacher": "15",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["4", "5", "6"]
         },
         {
             "Subject": "6",
@@ -186,7 +186,7 @@
             "Teacher": "16",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["13", "14", "15"]
         },
         {
             "Subject": "6",
@@ -194,7 +194,7 @@
             "Teacher": "17",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["22", "23", "24"]
         },
         {
             "Subject": "7",
@@ -202,7 +202,7 @@
             "Teacher": "15",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["4"]
         },
         {
             "Subject": "7",
@@ -210,7 +210,7 @@
             "Teacher": "18",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["5"]
         },
         {
             "Subject": "7",
@@ -218,7 +218,7 @@
             "Teacher": "17",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["6"]
         },
         {
             "Subject": "7",
@@ -226,7 +226,7 @@
             "Teacher": "15",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["13"]
         },
         {
             "Subject": "7",
@@ -234,7 +234,7 @@
             "Teacher": "18",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["14"]
         },
         {
             "Subject": "7",
@@ -242,7 +242,7 @@
             "Teacher": "17",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["15"]
         },
         {
             "Subject": "7",
@@ -250,7 +250,7 @@
             "Teacher": "15",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["22"]
         },
         {
             "Subject": "7",
@@ -258,7 +258,7 @@
             "Teacher": "18",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["23"]
         },
         {
             "Subject": "7",
@@ -266,7 +266,7 @@
             "Teacher": "17",
             "ClassroomType": "Lab",
             "Duration": "2",
-            "Group": []
+            "Group": ["24"]
         },
         {
             "Subject": "8",
@@ -274,7 +274,7 @@
             "Teacher": "19",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["4", "5", "6"]
         },
         {
             "Subject": "8",
@@ -282,7 +282,7 @@
             "Teacher": "19",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["13", "14", "15"]
         },
         {
             "Subject": "8",
@@ -290,7 +290,7 @@
             "Teacher": "19",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["22", "23", "24"]
         },
         {
             "Subject": "9",
@@ -298,7 +298,7 @@
             "Teacher": "20",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["4", "5", "6"]
         },
         {
             "Subject": "9",
@@ -306,7 +306,7 @@
             "Teacher": "20",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["13", "14", "15"]
         },
         {
             "Subject": "9",
@@ -314,7 +314,7 @@
             "Teacher": "20",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["22", "23", "24"]
         },
         {
             "Subject": "10",
@@ -322,7 +322,7 @@
             "Teacher": "20",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["4", "5", "6"]
         },
         {
             "Subject": "10",
@@ -330,7 +330,7 @@
             "Teacher": "20",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["13", "14", "15"]
         },
         {
             "Subject": "10",
@@ -338,7 +338,7 @@
             "Teacher": "20",
             "ClassroomType": "notLab",
             "Duration": "1",
-            "Group": []
+            "Group": ["22", "23", "24"]
         }
     ]
 }

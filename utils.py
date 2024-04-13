@@ -93,7 +93,7 @@ def set_up(num_of_columns):
     :param num_of_columns: number of classrooms
     :return: matrix, free
     """
-    w, h = num_of_columns, 60                                          # 5 (workdays) * 12 (work hours) = 60
+    w, h = num_of_columns, 30                                          # 5 (workdays) * 6 (work hours) = 30
     matrix = [[None for x in range(w)] for y in range(h)]
     free = []
 
@@ -109,7 +109,7 @@ def show_timetable(matrix):
     Prints timetable matrix.
     """
     days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-    hours = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    hours = [9, 10, 11, 12, 13, 14]
 
     # print heading for classrooms
     for i in range(len(matrix[0])):
@@ -129,7 +129,7 @@ def show_timetable(matrix):
             print('{:6s} '.format(str(matrix[i][j])), end='')
         print()
         h_cnt += 1
-        if h_cnt == 12:
+        if h_cnt == 6:
             h_cnt = 0
             d_cnt += 1
             print()
@@ -170,7 +170,7 @@ def write_solution_to_file(matrix, data, filled, filepath, groups_empty_space, t
         if group_index not in groups_dict:
             groups_dict[group_index] = group_name
     days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
-    hours = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    hours = [9, 10, 11, 6, 13, 14]
 
     f.write('\n--------------------------- SCHEDULE ---------------------------')
     for class_index, times in filled.items():
@@ -182,9 +182,9 @@ def write_solution_to_file(matrix, data, filled, filepath, groups_empty_space, t
         f.write('Teacher: {} \nSubject: {} \nGroups:{} \nType: {} \nDuration: {} hour(s)'
                 .format(c.teacher, c.subject, groups[:len(groups) - 2], c.type, c.duration))
         room = str(data.classrooms[times[0][1]])
-        f.write('\nClassroom: {:2s}\nTime: {}'.format(room[:room.rfind('-')], days[times[0][0] // 12]))
+        f.write('\nClassroom: {:2s}\nTime: {}'.format(room[:room.rfind('-')], days[times[0][0] // 6]))
         for time in times:
-            f.write(' {}'.format(hours[time[0] % 12]))
+            f.write(' {}'.format(hours[time[0] % 6]))
     f.close()
 
 
