@@ -1,190 +1,344 @@
 {
     "ClassroomTypes": {
-        "Lab": [4, 5, 7, 8],
-        "notLab": [1, 2, 3, 6]
+        "Lab": ["4", "5", "7", "8"],
+        "notLab": ["1", "2", "3", "6"]
     },
     "Classes": [
         {
-            "Subject": 1,
-            "Type": "notLab",
-            "Teacher": 1,
+            "Subject": "1",
+            "Type": "Theory",
+            "Teacher": "1",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 1,
-            "Type": "notLab",
-            "Teacher": 2,
+            "Subject": "1",
+            "Type": "Theory",
+            "Teacher": "2",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 2,
-            "Type": "notLab",
-            "Teacher": 1,
+            "Subject": "1",
+            "Type": "Theory",
+            "Teacher": "1",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 2,
-            "Type": "notLab",
-            "Teacher": 2,
+            "Subject": "2",
+            "Type": "Theory",
+            "Teacher": "1",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 3,
-            "Type": "notLab",
-            "Teacher": 3,
+            "Subject": "2",
+            "Type": "Theory",
+            "Teacher": "2",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 3,
-            "Type": "notLab",
-            "Teacher": 4,
+            "Subject": "2",
+            "Type": "Theory",
+            "Teacher": "1",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 3,
-            "Type": "notLab",
-            "Teacher": 5,
+            "Subject": "3",
+            "Type": "Theory",
+            "Teacher": "3",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 4,
-            "Type": "notLab",
-            "Teacher": 6,
+            "Subject": "3",
+            "Type": "Theory",
+            "Teacher": "4",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 4,
-            "Type": "notLab",
-            "Teacher": 7,
+            "Subject": "3",
+            "Type": "Theory",
+            "Teacher": "5",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 4,
-            "Type": "notLab",
-            "Teacher": 8,
+            "Subject": "4",
+            "Type": "Theory",
+            "Teacher": "6",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 5,
+            "Subject": "4",
+            "Type": "Theory",
+            "Teacher": "7",
+            "ClassroomType": "notLab",
+            "Duration": "1",
+            "Group": []
+        },
+        {
+            "Subject": "4",
+            "Type": "Theory",
+            "Teacher": "8",
+            "ClassroomType": "notLab",
+            "Duration": "1",
+            "Group": []
+        },
+        {
+            "Subject": "5",
             "Type": "Lab",
-            "Teacher": 6,
+            "Teacher": "6",
             "ClassroomType": "Lab",
-            "Duration": "2"
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 5,
+            "Subject": "5",
             "Type": "Lab",
-            "Teacher": 9,
+            "Teacher": "9",
             "ClassroomType": "Lab",
-            "Duration": "2"
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 5,
+            "Subject": "5",
             "Type": "Lab",
-            "Teacher": 10,
+            "Teacher": "10",
             "ClassroomType": "Lab",
-            "Duration": "2"
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 5,
+            "Subject": "5",
             "Type": "Lab",
-            "Teacher": 11,
+            "Teacher": "11",
             "ClassroomType": "Lab",
-            "Duration": "2"
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 5,
+            "Subject": "5",
             "Type": "Lab",
-            "Teacher": 12,
+            "Teacher": "12",
             "ClassroomType": "Lab",
-            "Duration": "2"
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 5,
+            "Subject": "5",
             "Type": "Lab",
-            "Teacher": 13,
+            "Teacher": "13",
             "ClassroomType": "Lab",
-            "Duration": "2"
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 5,
+            "Subject": "5",
             "Type": "Lab",
-            "Teacher": 14,
+            "Teacher": "14",
             "ClassroomType": "Lab",
-            "Duration": "2"
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 6,
-            "Type": "notLab",
-            "Teacher": 15,
+            "Subject": "5",
+            "Type": "Lab",
+            "Teacher": "6",
+            "ClassroomType": "Lab",
+            "Duration": "2",
+            "Group": []
+        },
+        {
+            "Subject": "5",
+            "Type": "Lab",
+            "Teacher": "9",
+            "ClassroomType": "Lab",
+            "Duration": "2",
+            "Group": []
+        },
+        {
+            "Subject": "6",
+            "Type": "Theory",
+            "Teacher": "15",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 6,
-            "Type": "notLab",
-            "Teacher": 16,
+            "Subject": "6",
+            "Type": "Theory",
+            "Teacher": "16",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 6,
-            "Type": "notLab",
-            "Teacher": 17,
+            "Subject": "6",
+            "Type": "Theory",
+            "Teacher": "17",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
         },
         {
-            "Subject": 7,
+            "Subject": "7",
             "Type": "Lab",
-            "Teacher": 15,
+            "Teacher": "15",
             "ClassroomType": "Lab",
-            "Duration": "2"
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 7,
+            "Subject": "7",
             "Type": "Lab",
-            "Teacher": 18,
+            "Teacher": "18",
             "ClassroomType": "Lab",
-            "Duration": "2"
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 7,
+            "Subject": "7",
             "Type": "Lab",
-            "Teacher": 17,
+            "Teacher": "17",
             "ClassroomType": "Lab",
-            "Duration": "2"
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 8,
-            "Type": "notLab",
-            "Teacher": 19,
-            "ClassroomType": "notLab",
-            "Duration": "1"
+            "Subject": "7",
+            "Type": "Lab",
+            "Teacher": "15",
+            "ClassroomType": "Lab",
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 9,
-            "Type": "notLab",
-            "Teacher": 20,
-            "ClassroomType": "notLab",
-            "Duration": "1"
+            "Subject": "7",
+            "Type": "Lab",
+            "Teacher": "18",
+            "ClassroomType": "Lab",
+            "Duration": "2",
+            "Group": []
         },
         {
-            "Subject": 10,
-            "Type": "notLab",
-            "Teacher": 20,
+            "Subject": "7",
+            "Type": "Lab",
+            "Teacher": "17",
+            "ClassroomType": "Lab",
+            "Duration": "2",
+            "Group": []
+        },
+        {
+            "Subject": "7",
+            "Type": "Lab",
+            "Teacher": "15",
+            "ClassroomType": "Lab",
+            "Duration": "2",
+            "Group": []
+        },
+        {
+            "Subject": "7",
+            "Type": "Lab",
+            "Teacher": "18",
+            "ClassroomType": "Lab",
+            "Duration": "2",
+            "Group": []
+        },
+        {
+            "Subject": "7",
+            "Type": "Lab",
+            "Teacher": "17",
+            "ClassroomType": "Lab",
+            "Duration": "2",
+            "Group": []
+        },
+        {
+            "Subject": "8",
+            "Type": "Theory",
+            "Teacher": "19",
             "ClassroomType": "notLab",
-            "Duration": "1"
+            "Duration": "1",
+            "Group": []
+        },
+        {
+            "Subject": "8",
+            "Type": "Theory",
+            "Teacher": "19",
+            "ClassroomType": "notLab",
+            "Duration": "1",
+            "Group": []
+        },
+        {
+            "Subject": "8",
+            "Type": "Theory",
+            "Teacher": "19",
+            "ClassroomType": "notLab",
+            "Duration": "1",
+            "Group": []
+        },
+        {
+            "Subject": "9",
+            "Type": "Theory",
+            "Teacher": "20",
+            "ClassroomType": "notLab",
+            "Duration": "1",
+            "Group": []
+        },
+        {
+            "Subject": "9",
+            "Type": "Theory",
+            "Teacher": "20",
+            "ClassroomType": "notLab",
+            "Duration": "1",
+            "Group": []
+        },
+        {
+            "Subject": "9",
+            "Type": "Theory",
+            "Teacher": "20",
+            "ClassroomType": "notLab",
+            "Duration": "1",
+            "Group": []
+        },
+        {
+            "Subject": "10",
+            "Type": "Theory",
+            "Teacher": "20",
+            "ClassroomType": "notLab",
+            "Duration": "1",
+            "Group": []
+        },
+        {
+            "Subject": "10",
+            "Type": "Theory",
+            "Teacher": "20",
+            "ClassroomType": "notLab",
+            "Duration": "1",
+            "Group": []
+        },
+        {
+            "Subject": "10",
+            "Type": "Theory",
+            "Teacher": "20",
+            "ClassroomType": "notLab",
+            "Duration": "1",
+            "Group": []
         }
     ]
 }
