@@ -3,6 +3,7 @@ import random
 from costs import check_hard_constraints, subjects_order_cost, empty_space_groups_cost, empty_space_teachers_cost, \
     free_hour
 from model import Class, Classroom, Data
+import mysql.connector
 
 
 def load_data(file_path, teachers_empty_space, groups_empty_space, subjects_order):
@@ -184,13 +185,22 @@ def write_solution_to_file(matrix, data, filled, filepath, groups_empty_space, t
     f.close()
 
 def insert_into_database(matrix, data, filled, filepath, groups_empty_space, teachers_empty_space, subjects_order, days, hours):
-    f = open('solution_files/sol_' + filepath, 'w')
+    ACADEMIC_YEAR_ID = 1
+    # insert into database logic below
+    # Establish a connection
+    cnx = mysql.connector.connect(user='root', password='Pranav18',
+                                host='localhost',
+                                database='timetable_manager')
+
+    # Create a cursor object
+    cursor = cnx.cursor(dictionary=True)
+    cursor.execute("DELETE FROM slotDatas")
+
     groups_dict = {}
     for group_name, group_index in data.groups.items():
         if group_index not in groups_dict:
             groups_dict[group_index] = group_name
-
-    f.write('\n--------------------------- SCHEDULE ---------------------------')
+    
     for class_index, times in filled.items():
         c = data.classes[class_index]
         group_ids = []
@@ -205,8 +215,29 @@ def insert_into_database(matrix, data, filled, filepath, groups_empty_space, tea
         day_number = days[times[0][0] // len(hours)]
         hour_numbers = [hours[time[0] % len(hours)] for time in times]
         print(f"Day: {day_number}\t Hours: {hour_numbers}\t Teacher: {teacher_id}\t Subject: {subject_id}\t Classroom: {classroom_id}\t Groups: {group_ids}")
-        
-        # insert into database logic below
+
+        for hour in hour_numbers:
+            cursor.execute(f"""SELECT id, day, number, AcademicYearId FROM Slot WHERE AcademicYearId = {ACADEMIC_YEAR_ID} AND day = {day_number} AND number = {hour}""")
+            slot_id = cursor.fetchall()[0]["id"]
+            cursor.execute(f"""
+                INSERT INTO SlotDatas (SlotId, TeacherId, SubjectId )
+                VALUES ({slot_id}, {teacher_id}, {subject_id})
+            """)
+            cursor.execute(f"""
+                SELECT id FROM SlotDatas 
+                WHERE slotId = {slot_id} AND TeacherId = {teacher_id} AND SubjectId = {subject_id}
+            """)
+            slotdata_id = cursor.fetchall()[0]["id"]
+            cursor.execute(f"""
+                INSERT INTO SlotDataClasses (SlotDataId, ClassroomId)
+                VALUES ({slotdata_id}, {classroom_id})
+            """)
+            for group_id in group_ids:
+                cursor.execute(f"""
+                    INSERT INTO SlotDataSubdivisions (SlotDataId, SubdivisionId)
+                    VALUES ({slotdata_id}, {group_id})
+                """)
+            cnx.commit()
 
 
 def show_statistics(matrix, data, subjects_order, groups_empty_space, teachers_empty_space, days, hours):
