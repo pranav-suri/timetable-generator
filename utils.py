@@ -183,6 +183,31 @@ def write_solution_to_file(matrix, data, filled, filepath, groups_empty_space, t
             f.write(' {}'.format(hours[time[0] % len(hours)]))
     f.close()
 
+def insert_into_database(matrix, data, filled, filepath, groups_empty_space, teachers_empty_space, subjects_order, days, hours):
+    f = open('solution_files/sol_' + filepath, 'w')
+    groups_dict = {}
+    for group_name, group_index in data.groups.items():
+        if group_index not in groups_dict:
+            groups_dict[group_index] = group_name
+
+    f.write('\n--------------------------- SCHEDULE ---------------------------')
+    for class_index, times in filled.items():
+        c = data.classes[class_index]
+        group_ids = []
+        for g in c.groups:
+            group_ids.append(int(groups_dict[g]))
+        
+        # room is of the the type 'room_number - room_type' eg. "501 - notLab". We need to remove the room_type to get the room number
+        room = str(data.classrooms[times[0][1]])
+        teacher_id = c.teacher
+        subject_id = c.subject.split(' ')[0] 
+        classroom_id = room[:room.rfind('-')] # removing room_type from end
+        day_number = days[times[0][0] // len(hours)]
+        hour_numbers = [hours[time[0] % len(hours)] for time in times]
+        print(f"Day: {day_number}\t Hours: {hour_numbers}\t Teacher: {teacher_id}\t Subject: {subject_id}\t Classroom: {classroom_id}\t Groups: {group_ids}")
+        
+        # insert into database logic below
+
 
 def show_statistics(matrix, data, subjects_order, groups_empty_space, teachers_empty_space, days, hours):
     """

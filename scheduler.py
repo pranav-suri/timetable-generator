@@ -1,6 +1,6 @@
 import random
 from operator import itemgetter
-from utils import load_data, show_timetable, set_up, show_statistics, write_solution_to_file
+from utils import insert_into_database, load_data, show_timetable, set_up, show_statistics, write_solution_to_file
 from costs import check_hard_constraints, hard_constraints_cost, empty_space_groups_cost, empty_space_teachers_cost, \
     free_hour
 import copy
@@ -304,6 +304,7 @@ def simulated_hardening(matrix, data, free, filled, groups_empty_space, teachers
     print('STATISTICS AFTER HARDENING')
     show_statistics(matrix, data, subjects_order, groups_empty_space, teachers_empty_space, days, hours)
     write_solution_to_file(matrix, data, filled, file, groups_empty_space, teachers_empty_space, subjects_order, days, hours)
+    insert_into_database(matrix, data, filled, file,groups_empty_space, teachers_empty_space, subjects_order, days, hours)
 
 
 def main():
@@ -324,7 +325,7 @@ def main():
     groups_empty_space = {}
     teachers_empty_space = {}
     file = 'ulaz2.json'
-    days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+    days = ["1", "2", "3", "4", "5"]
     hours = [1,2,3,4,5,6,7,8]
     data = load_data('test_files/' + file, teachers_empty_space, groups_empty_space, subjects_order)
     matrix, free = set_up(len(data.classrooms), days, hours)
@@ -334,7 +335,7 @@ def main():
     print('Initial cost of hard constraints: {}'.format(total))
 
     evolutionary_algorithm(matrix, data, free, filled, groups_empty_space, teachers_empty_space, subjects_order, days, hours)
-    print('STATISTICS')
+    print('STATISTICS BEFORE HARDENING')
     show_statistics(matrix, data, subjects_order, groups_empty_space, teachers_empty_space, days, hours)
     simulated_hardening(matrix, data, free, filled, groups_empty_space, teachers_empty_space, subjects_order, file, days, hours)
 

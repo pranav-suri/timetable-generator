@@ -8,30 +8,33 @@ cnx = mysql.connector.connect(user='root', password='Pranav18',
 # Create a cursor object
 cursor = cnx.cursor(dictionary=True)
 
-cursor.execute("""
+ACADEMIC_YEAR_ID = 1
+DEPARTMENT_ID = 2
+
+cursor.execute(f"""
     SELECT
     t.id AS teacherId,
     s.id AS subjectId, s.isLab
     FROM teach
     INNER JOIN teacher t ON teach.TeacherId = t.id
     INNER JOIN subject s ON teach.SubjectId = s.id
-    WHERE t.academicYearId = 1
+    WHERE t.academicYearId = {ACADEMIC_YEAR_ID}
 """)
 
 teaches = cursor.fetchall()
 
-cursor.execute("""
+cursor.execute(f"""
     SELECT c.id, c.classroomName, c.isLab
-    FROM classroom c WHERE c.academicYearId = 1
+    FROM classroom c WHERE c.academicYearId = {ACADEMIC_YEAR_ID}
                """)
 
 classrooms = cursor.fetchall()
 
-cursor.execute("""
+cursor.execute(f"""
     SELECT division.id AS divisionId,subdiv.id AS subdivisionId
     FROM division
     LEFT JOIN subdivision subdiv ON division.id = subdiv.divisionId
-    WHERE division.departmentId = 2
+    WHERE division.departmentId = {DEPARTMENT_ID}
 """)
 
 subdivisions = cursor.fetchall()
@@ -177,6 +180,3 @@ print(final)
 
 # Close the connection
 cnx.close()
-
-
-
