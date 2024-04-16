@@ -1,7 +1,7 @@
 import mysql.connector
 
 # Establish a connection
-cnx = mysql.connector.connect(user='root', password='12345678',
+cnx = mysql.connector.connect(user='root', password='Pranav18',
                                host='localhost',
                                database='timetable_manager')
 
@@ -159,10 +159,40 @@ Classes = LabClasses + notLabClasses
 # Sort the classes by subjectId
 Classes.sort(key=lambda x: int(x["Subject"]))
 
-# TODO: Add the groups to the classes
+# Initialize a variable to keep track of the incremented subject ID
+new_subject_id = 0  # Adjust the starting ID as per your requirement
 
-final = {"ClassroomTypes": ClassroomTypes, "Classes": Classes}
+# Create a new list to store the modified classes
+modified_classes = []
+
+# Iterate through each element in the Classes list
+for class_item in Classes:
+    # Increment the subject ID
+    new_subject_id += 1
+    # Maintain the old subject key value in a new key called "subject_name"
+    class_item["subject_name"] = class_item["Subject"]
+
+    # Create a new entry for the current class with the incremented subject ID
+    new_class_item = class_item.copy()  # Create a copy of the current entry
+    new_class_item["Subject"] = str(new_subject_id)  # Incremented subject ID
+
+    modified_classes.append(new_class_item)
+
+    # If the class type is "Theory", add two more entries with the same details but different subject IDs
+    if class_item["Type"] == "Theory":
+        for _ in range(2):
+            new_subject_id += 1
+            new_class_item = class_item.copy()  # Create a copy of the current entry
+            new_class_item["Subject"] = str(new_subject_id)  # Incremented subject ID
+            modified_classes.append(new_class_item)
+
+
+final = {"ClassroomTypes": ClassroomTypes, "Classes": modified_classes}
+
 print(final)
 
 # Close the connection
 cnx.close()
+
+
+
