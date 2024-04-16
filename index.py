@@ -123,9 +123,10 @@ for subjectId, teacherIds in labTeachersBySubject.items():
             })
     
 
-Classes = []
 teaches.sort(key=lambda x: int(x["subjectId"]))
 
+LabClasses = []
+notLabClasses = []
 for teach in teaches:
     Class = {
             "Subject": str(teach['subjectId']),
@@ -135,15 +136,10 @@ for teach in teaches:
             "Duration": "2" if teach["isLab"] else "1",
             "Group": []
         }
-    Classes.append(Class)
-    
-LabClasses = []
-notLabClasses = []
-for c in Classes:
-    if c["ClassroomType"] == "Lab":
-        LabClasses.append(c)
+    if teach["isLab"]:
+        LabClasses.append(Class)
     else:
-        notLabClasses.append(c)
+        notLabClasses.append(Class)
 
 # Assign one subdivision to each labClass using subdivisions array
 for i, c in enumerate(LabClasses):
@@ -159,33 +155,21 @@ Classes = LabClasses + notLabClasses
 # Sort the classes by subjectId
 Classes.sort(key=lambda x: int(x["Subject"]))
 
-# Initialize a variable to keep track of the incremented subject ID
-new_subject_id = 0  # Adjust the starting ID as per your requirement
-
 # Create a new list to store the modified classes
 modified_classes = []
 
 # Iterate through each element in the Classes list
 for class_item in Classes:
-    # Increment the subject ID
-    new_subject_id += 1
-    # Maintain the old subject key value in a new key called "subject_name"
-    class_item["subject_name"] = class_item["Subject"]
-
-    # Create a new entry for the current class with the incremented subject ID
-    new_class_item = class_item.copy()  # Create a copy of the current entry
-    new_class_item["Subject"] = str(new_subject_id)  # Incremented subject ID
-
-    modified_classes.append(new_class_item)
-
-    # If the class type is "Theory", add two more entries with the same details but different subject IDs
+    # If the class type is "Theory", add three entries with the same details but different subject names
     if class_item["Type"] == "Theory":
-        for _ in range(2):
-            new_subject_id += 1
+        for i in range(3):
             new_class_item = class_item.copy()  # Create a copy of the current entry
-            new_class_item["Subject"] = str(new_subject_id)  # Incremented subject ID
+            new_class_item["Subject"] += f" {i+1}"  # Append to subject name
             modified_classes.append(new_class_item)
-
+    else:
+        new_class_item = class_item.copy()
+        new_class_item["Subject"] += " 1"
+        modified_classes.append(new_class_item)    
 
 final = {"ClassroomTypes": ClassroomTypes, "Classes": modified_classes}
 

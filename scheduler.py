@@ -72,7 +72,7 @@ def insert_order(subjects_order, subject, group, type, start_time):
     elif type == 'Lab':
         times[1] = start_time
     else:
-        raise Exception('Invalid Input for Type. Only Lab of Theory is permitted.')
+        raise Exception('Invalid Input for Type. Only Lab or Theory is permitted.')
         times[2] = start_time
     subjects_order[(subject, group)] = times
 
@@ -323,7 +323,7 @@ def main():
     subjects_order = {}
     groups_empty_space = {}
     teachers_empty_space = {}
-    file = 'ulaz1.json'
+    file = 'ulaz2.json'
 
     data = load_data('test_files/' + file, teachers_empty_space, groups_empty_space, subjects_order)
     matrix, free = set_up(len(data.classrooms))

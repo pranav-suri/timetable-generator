@@ -1,0 +1,826 @@
+-------------------------- STATISTICS --------------------------
+
+Hard constraints satisfied: 100.00 %
+Soft constraints satisfied: 100.00 %
+
+TOTAL empty space for all GROUPS and all days: 3
+MAX empty space for GROUP in day: 1
+AVERAGE empty space for GROUPS per week: 0.33
+
+TOTAL empty space for all TEACHERS and all days: 43
+MAX empty space for TEACHER in day: 8
+AVERAGE empty space for TEACHERS per week: 2.15
+
+Free term -> Wednesday: 9
+
+--------------------------- SCHEDULE ---------------------------
+
+Class 16
+Teacher: 20 
+Subject: 9 3 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Friday 10
+
+Class 24
+Teacher: 11 
+Subject: 5 1 
+Groups: 13 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 4 
+Time: Monday 13 14
+
+Class 42
+Teacher: 20 
+Subject: 9 2 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Tuesday 11
+
+Class 17
+Teacher: 2 
+Subject: 1 2 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Wednesday 10
+
+Class 18
+Teacher: 19 
+Subject: 8 2 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Wednesday 11
+
+Class 8
+Teacher: 20 
+Subject: 9 1 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Thursday 10
+
+Class 47
+Teacher: 20 
+Subject: 10 3 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Monday 10
+
+Class 3
+Teacher: 18 
+Subject: 7 1 
+Groups: 5 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 8 
+Time: Tuesday 11 6
+
+Class 39
+Teacher: 6 
+Subject: 5 1 
+Groups: 4 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 7 
+Time: Tuesday 11 6
+
+Class 85
+Teacher: 15 
+Subject: 7 1 
+Groups: 4 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 8 
+Time: Monday 9 10
+
+Class 2
+Teacher: 19 
+Subject: 8 3 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Thursday 14
+
+Class 26
+Teacher: 4 
+Subject: 3 3 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Tuesday 10
+
+Class 20
+Teacher: 20 
+Subject: 10 1 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Monday 6
+
+Class 40
+Teacher: 4 
+Subject: 3 2 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Thursday 13
+
+Class 33
+Teacher: 4 
+Subject: 3 1 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Wednesday 6
+
+Class 37
+Teacher: 20 
+Subject: 10 1 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Wednesday 13
+
+Class 82
+Teacher: 19 
+Subject: 8 1 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Monday 11
+
+Class 53
+Teacher: 19 
+Subject: 8 1 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Wednesday 6
+
+Class 56
+Teacher: 20 
+Subject: 10 3 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Wednesday 10
+
+Class 57
+Teacher: 17 
+Subject: 7 1 
+Groups: 24 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 8 
+Time: Friday 10 11
+
+Class 22
+Teacher: 2 
+Subject: 2 2 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Thursday 11
+
+Class 28
+Teacher: 15 
+Subject: 7 1 
+Groups: 22 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 5 
+Time: Wednesday 6 13
+
+Class 68
+Teacher: 12 
+Subject: 5 1 
+Groups: 14 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 8 
+Time: Monday 13 14
+
+Class 73
+Teacher: 14 
+Subject: 5 1 
+Groups: 22 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 4 
+Time: Friday 10 11
+
+Class 35
+Teacher: 6 
+Subject: 4 2 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Friday 6
+
+Class 69
+Teacher: 9 
+Subject: 5 1 
+Groups: 24 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 4 
+Time: Wednesday 6 13
+
+Class 78
+Teacher: 6 
+Subject: 4 1 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Thursday 14
+
+Class 36
+Teacher: 6 
+Subject: 5 1 
+Groups: 23 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 5 
+Time: Friday 10 11
+
+Class 63
+Teacher: 20 
+Subject: 9 1 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Tuesday 9
+
+Class 46
+Teacher: 18 
+Subject: 7 1 
+Groups: 23 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 8 
+Time: Wednesday 6 13
+
+Class 5
+Teacher: 8 
+Subject: 4 1 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Thursday 10
+
+Class 52
+Teacher: 17 
+Subject: 7 1 
+Groups: 15 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 4 
+Time: Friday 6 13
+
+Class 70
+Teacher: 20 
+Subject: 9 2 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Thursday 13
+
+Class 89
+Teacher: 15 
+Subject: 6 2 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Friday 11
+
+Class 9
+Teacher: 19 
+Subject: 8 2 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Thursday 11
+
+Class 44
+Teacher: 5 
+Subject: 3 2 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Tuesday 6
+
+Class 27
+Teacher: 13 
+Subject: 5 1 
+Groups: 15 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 7 
+Time: Monday 13 14
+
+Class 32
+Teacher: 1 
+Subject: 2 2 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Tuesday 13
+
+Class 4
+Teacher: 1 
+Subject: 2 1 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Wednesday 11
+
+Class 76
+Teacher: 3 
+Subject: 3 3 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Monday 13
+
+Class 80
+Teacher: 1 
+Subject: 2 3 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Monday 6
+
+Class 23
+Teacher: 15 
+Subject: 6 1 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Wednesday 14
+
+Class 65
+Teacher: 8 
+Subject: 4 3 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Monday 9
+
+Class 15
+Teacher: 20 
+Subject: 9 3 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Thursday 9
+
+Class 7
+Teacher: 1 
+Subject: 2 2 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Monday 14
+
+Class 72
+Teacher: 17 
+Subject: 7 1 
+Groups: 6 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 5 
+Time: Monday 9 10
+
+Class 11
+Teacher: 1 
+Subject: 2 3 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Monday 11
+
+Class 86
+Teacher: 10 
+Subject: 5 1 
+Groups: 6 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 4 
+Time: Tuesday 11 6
+
+Class 34
+Teacher: 20 
+Subject: 10 2 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Wednesday 9
+
+Class 84
+Teacher: 17 
+Subject: 6 3 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Tuesday 13
+
+Class 19
+Teacher: 1 
+Subject: 1 3 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Monday 13
+
+Class 13
+Teacher: 18 
+Subject: 7 1 
+Groups: 14 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 5 
+Time: Friday 6 13
+
+Class 87
+Teacher: 1 
+Subject: 1 1 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Friday 13
+
+Class 1
+Teacher: 15 
+Subject: 7 1 
+Groups: 13 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 7 
+Time: Friday 6 13
+
+Class 54
+Teacher: 2 
+Subject: 2 3 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Tuesday 13
+
+Class 49
+Teacher: 16 
+Subject: 6 1 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Friday 11
+
+Class 25
+Teacher: 17 
+Subject: 6 1 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Tuesday 9
+
+Class 83
+Teacher: 9 
+Subject: 5 1 
+Groups: 5 
+Type: Lab 
+Duration: 2 hour(s)
+Classroom: 4 
+Time: Monday 9 10
+
+Class 14
+Teacher: 20 
+Subject: 9 3 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Friday 13
+
+Class 30
+Teacher: 1 
+Subject: 1 2 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Thursday 13
+
+Class 67
+Teacher: 20 
+Subject: 10 2 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Monday 11
+
+Class 88
+Teacher: 19 
+Subject: 8 1 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Friday 6
+
+Class 64
+Teacher: 19 
+Subject: 8 3 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Friday 14
+
+Class 58
+Teacher: 20 
+Subject: 9 1 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Thursday 11
+
+Class 12
+Teacher: 19 
+Subject: 8 2 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Monday 10
+
+Class 79
+Teacher: 5 
+Subject: 3 1 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Thursday 14
+
+Class 43
+Teacher: 1 
+Subject: 1 1 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Tuesday 14
+
+Class 51
+Teacher: 20 
+Subject: 9 2 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Tuesday 10
+
+Class 10
+Teacher: 1 
+Subject: 1 3 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Wednesday 9
+
+Class 61
+Teacher: 20 
+Subject: 10 1 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Monday 9
+
+Class 59
+Teacher: 7 
+Subject: 4 2 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Tuesday 14
+
+Class 0
+Teacher: 19 
+Subject: 8 3 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Wednesday 14
+
+Class 31
+Teacher: 20 
+Subject: 10 2 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Wednesday 14
+
+Class 6
+Teacher: 3 
+Subject: 3 2 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Thursday 10
+
+Class 45
+Teacher: 16 
+Subject: 6 2 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Thursday 9
+
+Class 48
+Teacher: 20 
+Subject: 10 3 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Thursday 6
+
+Class 62
+Teacher: 8 
+Subject: 4 2 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Friday 14
+
+Class 50
+Teacher: 15 
+Subject: 6 3 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Friday 10
+
+Class 81
+Teacher: 6 
+Subject: 4 3 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Wednesday 11
+
+Class 21
+Teacher: 3 
+Subject: 3 1 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Monday 14
+
+Class 74
+Teacher: 1 
+Subject: 1 2 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Tuesday 10
+
+Class 71
+Teacher: 5 
+Subject: 3 3 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Wednesday 10
+
+Class 29
+Teacher: 16 
+Subject: 6 3 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Thursday 6
+
+Class 77
+Teacher: 7 
+Subject: 4 3 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 1 
+Time: Wednesday 9
+
+Class 60
+Teacher: 7 
+Subject: 4 1 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 6 
+Time: Tuesday 6
+
+Class 55
+Teacher: 2 
+Subject: 1 3 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Monday 6
+
+Class 41
+Teacher: 1 
+Subject: 2 1 
+Groups: 4, 5, 6 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Thursday 9
+
+Class 66
+Teacher: 2 
+Subject: 2 1 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 2 
+Time: Tuesday 9
+
+Class 38
+Teacher: 17 
+Subject: 6 2 
+Groups: 22, 23, 24 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Tuesday 11
+
+Class 75
+Teacher: 2 
+Subject: 1 1 
+Groups: 13, 14, 15 
+Type: Theory 
+Duration: 1 hour(s)
+Classroom: 3 
+Time: Wednesday 13
