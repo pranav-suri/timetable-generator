@@ -18,7 +18,13 @@ def initial_population(data, matrix, free, filled, groups_empty_space, teachers_
         ind = 0
         # ind = random.randrange(len(free) - int(classs.duration))
         while True:
+            # start_field = free[ind % len(free)]
+            # index_in_bound = ind%len(free)
+            # print(len(free))
+            # print("IND: ",ind)
             start_field = free[ind]
+            # print("Start field: ", start_field)
+            # print("Free length: ", len(free))
 
             # check if class won't start one day and end on the next
             start_time = start_field[0]
@@ -324,7 +330,7 @@ def main():
     subjects_order = {}
     groups_empty_space = {}
     teachers_empty_space = {}
-    file = 'ulaz2.json'
+    file = 'ulaz3.json'
     days = ["1", "2", "3", "4", "5"]
     hours = [1,2,3,4,5,6,7,8]
     data = load_data('test_files/' + file, teachers_empty_space, groups_empty_space, subjects_order)
