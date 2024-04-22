@@ -1,12 +1,13 @@
 class Class:
 
-    def __init__(self, groups, teacher, subject, type, duration, classrooms):
+    def __init__(self, groups, teacher, subject, type, duration, classrooms, allowSimultaneous):
         self.groups = groups
         self.teacher = teacher
         self.subject = subject
         self.type = type
         self.duration = duration
         self.classrooms = classrooms
+        self.allowSimultaneous = True if allowSimultaneous == "true" else False
 
     def __str__(self):
         return "Groups {} | Teacher '{}' | Subject '{}' | Type {} | {} hours | Classrooms {} \n"\

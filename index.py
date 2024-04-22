@@ -29,17 +29,20 @@ def getClassroomTypes(academic_year_id):
     return ClassroomTypes
 
 def classesByDepartment(academic_year_id, department_id):
-    cursor.execute(f"""SELECT s.id FROM subject s WHERE s.departmentId = {department_id}""")
+    cursor.execute(f"""SELECT s.id FROM subject s WHERE s.departmentId = {department_id} """)
     subjects = cursor.fetchall()
     subjectIds = [subject["id"] for subject in subjects]
     subjectIds = ",".join(map(str, subjectIds))
     cursor.execute(f"""
         SELECT
         t.id AS teacherId,
-        s.id AS subjectId, s.isLab
+        s.id AS subjectId, 
+        s.isLab,
+        g.allowSimultaneous
         FROM teach
         INNER JOIN teacher t ON teach.TeacherId = t.id
         INNER JOIN subject s ON teach.SubjectId = s.id
+        INNER JOIN `group` g ON s.GroupId = g.id
         WHERE s.id IN ({subjectIds})
     """)
 
@@ -48,7 +51,7 @@ def classesByDepartment(academic_year_id, department_id):
     cursor.execute(f"""
         SELECT division.id AS divisionId,subdiv.id AS subdivisionId
         FROM division
-        LEFT JOIN subdivision subdiv ON division.id = subdiv.divisionId
+        INNER JOIN subdivision subdiv ON division.id = subdiv.divisionId
         WHERE division.departmentId = {department_id}
     """)
 
@@ -72,68 +75,105 @@ def classesByDepartment(academic_year_id, department_id):
     # Convert the dictionary values to a list
     formatted_subdivisions = list(subdivisions_by_division.values())
 
+    # Dictionary of teachers for non-lab subjects
+    notLabTeachersBySubject = {}
+    # Dictionary of teachers for lab subjects
+    labTeachersBySubject = {}
+    # Dictionary of teachers for elective labs
+    electiveLabTeachersBySubject = {}
+    # Dictionary of teachers for elective theory
+    electiveTheoryTeachersBySubject = {}
+    
+    # Separate the teachers into different dictionaries based on the subject and type of subject
+    for teach in teaches:
+        subjectId = teach["subjectId"]
+        # Check if the subject is lab
+        if teach["isLab"]:
+            # Check if the lab subject allows simultaneous labs
+            if teach["allowSimultaneous"]:
+                # Add the teacher to the list of elective teachers for the subject
+                if subjectId in electiveLabTeachersBySubject:
+                    electiveLabTeachersBySubject[subjectId].append(teach["teacherId"])
+                else:
+                    electiveLabTeachersBySubject[subjectId] = [teach["teacherId"]]
+
+            if not teach["allowSimultaneous"]:
+                # Add the teacher to the list of core teachers for the subject
+                if subjectId in labTeachersBySubject:
+                    labTeachersBySubject[subjectId].append(teach["teacherId"])
+                else:
+                    labTeachersBySubject[subjectId] = [teach["teacherId"]]
+
+        # If the subject is not a lab subject
+        elif not teach["isLab"]:
+            if teach["allowSimultaneous"]:
+                # Add the teacher to the list of elective teachers for the subject
+                if subjectId in electiveTheoryTeachersBySubject:
+                    electiveTheoryTeachersBySubject[subjectId].append(teach["teacherId"])
+                else:
+                    electiveTheoryTeachersBySubject[subjectId] = [teach["teacherId"]]
+            if not teach["allowSimultaneous"]:
+                # Add the teacher to the list of core teachers for the subject
+                if subjectId in notLabTeachersBySubject:
+                    notLabTeachersBySubject[subjectId].append(teach["teacherId"])
+                else:
+                    notLabTeachersBySubject[subjectId] = [teach["teacherId"]]
+
     # Count number of divisions
     divisionSet = {subdivision["divisionId"] for subdivision in subdivisions}
     numberOfDivisions = len(divisionSet)
 
-    # Count number of teacher of a subject (notLab)
-    notLabTeachersBySubject = {}
-    for teach in teaches:
-        subjectId = teach["subjectId"]
-        # Check if the subject is non-lab
-        if not teach["isLab"]:
-            # Increment the count for the subject
-            if subjectId in notLabTeachersBySubject:
-                notLabTeachersBySubject[subjectId].append(teach["teacherId"])
-            else:
-                notLabTeachersBySubject[subjectId] = [teach["teacherId"]]
-
-
-    # Increase number of teacher entries to equal the number of divisions for notLabs
+    # Increase number of teacher entries to equal the number of divisions for core notLabs
     for subjectId, teacherIds in notLabTeachersBySubject.items():
         if len(teacherIds) < numberOfDivisions:
-            # Select teachers to increase the count
             numOfSubjectTeachers = len(teacherIds)
             for i in range(numberOfDivisions - numOfSubjectTeachers):
+                # Select teachers to increase the count
                 teaches.append({
                     "teacherId": teacherIds[i % numOfSubjectTeachers],
                     "subjectId": subjectId,
-                    "isLab": False
+                    "isLab": False,
+                    "allowSimultaneous": False
                 })
+        elif len(teacherIds) == numberOfDivisions:
+            pass
+        else: 
+            # Implement logic to remove teach entry based on subjectId
+
+            print("Number of divions:", numberOfDivisions)
+            print("Number of teachers for not lab subject is greater than number of divisions", subjectId, teacherIds)
 
     # Count number of subdivisions
     subdivisionSet = {subdivision["subdivisionId"] for subdivision in subdivisions}
     numberOfSubdivisions = len(subdivisionSet)
 
-    # Count number of teacher of a subject (Lab)
-    labTeachersBySubject = {}
-    for teach in teaches:
-        subjectId = teach["subjectId"]
-        # Check if the subject is lab
-        if teach["isLab"]:
-            # Increment the count for the subject
-            if subjectId in labTeachersBySubject:
-                labTeachersBySubject[subjectId].append(teach["teacherId"])
-            else:
-                labTeachersBySubject[subjectId] = [teach["teacherId"]]
-
     # Increase number of teacher entries randomly to equal the number of subdivisions for Labs
     for subjectId, teacherIds in labTeachersBySubject.items():
         if len(teacherIds) < numberOfSubdivisions:
-            # Randomly select teachers to increase the count
             numOfSubjectTeachers = len(teacherIds)
             for i in range(numberOfSubdivisions - numOfSubjectTeachers):
+                # Select teachers to increase the count
                 teaches.append({
                     "teacherId": teacherIds[i % numOfSubjectTeachers],
                     "subjectId": subjectId,
-                    "isLab": True
+                    "isLab": True,
+                    "allowSimultaneous": False
                 })
-        
+        elif len(teacherIds) == numberOfSubdivisions:
+            pass
+        else: 
+            # Implement logic to remove a teach entry based on subjectId
 
+            print("Number of subdivisions: ", numberOfSubdivisions)
+            print("Number of teachers for lab subject is greater than number of subdivisions", subjectId, teacherIds)
+    
     teaches.sort(key=lambda x: int(x["subjectId"]))
 
-    LabClasses = []
-    notLabClasses = []
+    coreLabClasses = []
+    electiveLabClasses = []
+    coreTheoryClasses = []
+    electiveTheoryClasses = []
+
     for teach in teaches:
         Class = {
                 "Subject": str(teach['subjectId']),
@@ -141,23 +181,33 @@ def classesByDepartment(academic_year_id, department_id):
                 "Teacher": str(teach["teacherId"]),
                 "ClassroomType": "Lab" if teach["isLab"] else "notLab",
                 "Duration": "2" if teach["isLab"] else "1",
-                "Group": []
+                "Group": [],
+                "AllowSimultaneous": "true" if teach["allowSimultaneous"] else "false"
             }
-        if teach["isLab"]:
-            LabClasses.append(Class)
-        else:
-            notLabClasses.append(Class)
+        if teach["isLab"] and teach["allowSimultaneous"]:
+            electiveLabClasses.append(Class)
+        elif teach["isLab"] and not teach["allowSimultaneous"]:
+            coreLabClasses.append(Class)
+        elif not teach["isLab"] and teach["allowSimultaneous"]:
+            electiveTheoryClasses.append(Class)
+        elif not teach["isLab"] and not teach["allowSimultaneous"]:
+            coreTheoryClasses.append(Class)
 
     # Assign one subdivision to each labClass using subdivisions array
-    for i, c in enumerate(LabClasses):
+    for i, c in enumerate(coreLabClasses):
         # Assign a subdivision from formatted_subdivisions array to the class
         c["Group"].append(str(subdivisions[i % len(subdivisions)]["subdivisionId"]))
 
-    for i, c in enumerate(notLabClasses):
+    # Assign all subdivsions to each elective lab class
+    
+    # Assign all subdivisions to each theory thoery class
+
+    for i, c in enumerate(coreTheoryClasses):
         # Assign a division from formatted_subdivisions array to the class
         result = list(map(str, formatted_subdivisions[i % len(formatted_subdivisions)]["subdivisionIds"]))
         c["Group"].extend(result)
-    Classes = LabClasses + notLabClasses
+    
+    Classes = coreLabClasses + coreTheoryClasses # + electiveLabClasses + electiveTheoryClasses 
     # Sort the classes by subjectId
     Classes.sort(key=lambda x: int(x["Subject"]))
     modified_classes = []

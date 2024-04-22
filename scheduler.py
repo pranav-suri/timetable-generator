@@ -16,16 +16,8 @@ def initial_population(data, matrix, free, filled, groups_empty_space, teachers_
 
     for index, classs in classes.items():
         ind = 0
-        # ind = random.randrange(len(free) - int(classs.duration))
         while True:
-            # start_field = free[ind % len(free)]
-            # index_in_bound = ind%len(free)
-            # print(len(free))
-            # print("IND: ",ind)
             start_field = free[ind]
-            # print("Start field: ", start_field)
-            # print("Free length: ", len(free))
-
             # check if class won't start one day and end on the next
             start_time = start_field[0]
             end_time = start_time + int(classs.duration) - 1
@@ -336,7 +328,6 @@ def main():
     data = load_data('test_files/' + file, teachers_empty_space, groups_empty_space, subjects_order)
     matrix, free = set_up(len(data.classrooms), days, hours)
     initial_population(data, matrix, free, filled, groups_empty_space, teachers_empty_space, subjects_order, days, hours)
-
     total, _, _, _, _ = hard_constraints_cost(matrix, data)
     print('Initial cost of hard constraints: {}'.format(total))
 

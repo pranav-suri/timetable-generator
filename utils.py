@@ -38,7 +38,7 @@ def load_data(file_path, teachers_empty_space, groups_empty_space, subjects_orde
         if new_teacher not in teachers_empty_space:
             teachers_empty_space[new_teacher] = []
 
-        new = Class(new_group, new_teacher, cl['Subject'], cl['Type'], cl['Duration'], cl['ClassroomType'])
+        new = Class(new_group, new_teacher, cl['Subject'], cl['Type'], cl['Duration'], cl['ClassroomType'], cl['AllowSimultaneous'])
         # add groups
         for group in new_group:
             if group not in groups:
