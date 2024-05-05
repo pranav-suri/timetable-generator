@@ -1,7 +1,6 @@
 import mysql.connector
 import json
 
-# Establish a connection
 cnx = mysql.connector.connect(user='root', password='Pranav18',
                                host='localhost',
                                database='timetable_manager')
@@ -226,24 +225,30 @@ def classesByDepartment(academic_year_id, department_id):
     
     return modified_classes
 
-classes = []
-cursor.execute(f"""SELECT id FROM batch WHERE academicYearId = {ACADEMIC_YEAR_ID}""")
-batches = cursor.fetchall()
-for batch in batches:
-    batch_id = batch["id"]
-    cursor.execute(f"""SELECT id FROM department WHERE batchId = {batch_id}""")
-    departments = cursor.fetchall()
-    for department in departments:
-        department_id = department["id"]
-        classes.extend(classesByDepartment(ACADEMIC_YEAR_ID, department_id))
-           
-final = {"ClassroomTypes": getClassroomTypes(ACADEMIC_YEAR_ID), "Classes": classes}
 
-file = './test_files/ulaz3.json'
+def data(academic_year_id=1, department_id=2):
 
-# Convert and write JSON object to file
-with open(file, "w") as outfile: 
-    json.dump(final, outfile)
+    classes = []
+    cursor.execute(f"""SELECT id FROM batch WHERE academicYearId = {ACADEMIC_YEAR_ID}""")
+    batches = cursor.fetchall()
+    for batch in batches:
+        batch_id = batch["id"]
+        cursor.execute(f"""SELECT id FROM department WHERE batchId = {batch_id}""")
+        departments = cursor.fetchall()
+        for department in departments:
+            department_id = department["id"]
+            # classes.extend(classesByDepartment(ACADEMIC_YEAR_ID, department_id))
+
+    classes.extend(classesByDepartment(academic_year_id, department_id))
+    final = {"ClassroomTypes": getClassroomTypes(ACADEMIC_YEAR_ID), "Classes": classes}
+
+    file = './test_files/ulaz3.json'
+
+    # Convert and write JSON object to file
+    with open(file, "w") as outfile:
+        json.dump(final, outfile)
+    cnx.close()
+    print("data added")
+    return 1
 
 # Close the connection
-cnx.close()
