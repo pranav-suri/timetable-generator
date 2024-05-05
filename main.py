@@ -4,9 +4,9 @@ import scheduler
 
 app = Flask(__name__)
 
-@app.route("/generate")
-def home():
-    a = index.data(academic_year_id=1, department_id=2)
+@app.route("/generate/department/<id>")
+def home(id):
+    a = index.data(department_id=id)
     if a == 1:
         scheduler.main()
     return "success"

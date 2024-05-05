@@ -27,7 +27,7 @@ def getClassroomTypes(academic_year_id):
             ClassroomTypes["notLab"].append(str(classroom['id']))
     return ClassroomTypes
 
-def classesByDepartment(academic_year_id, department_id):
+def classesByDepartment(department_id):
     cursor.execute(f"""SELECT s.id FROM subject s WHERE s.departmentId = {department_id} """)
     subjects = cursor.fetchall()
     subjectIds = [subject["id"] for subject in subjects]
@@ -226,20 +226,20 @@ def classesByDepartment(academic_year_id, department_id):
     return modified_classes
 
 
-def data(academic_year_id=1, department_id=2):
+def data(department_id=2):
 
     classes = []
-    cursor.execute(f"""SELECT id FROM batch WHERE academicYearId = {ACADEMIC_YEAR_ID}""")
-    batches = cursor.fetchall()
-    for batch in batches:
-        batch_id = batch["id"]
-        cursor.execute(f"""SELECT id FROM department WHERE batchId = {batch_id}""")
-        departments = cursor.fetchall()
-        for department in departments:
-            department_id = department["id"]
-            # classes.extend(classesByDepartment(ACADEMIC_YEAR_ID, department_id))
+    # cursor.execute(f"""SELECT id FROM batch WHERE academicYearId = {ACADEMIC_YEAR_ID}""")
+    # batches = cursor.fetchall()
+    # for batch in batches:
+    #     batch_id = batch["id"]
+    #     cursor.execute(f"""SELECT id FROM department WHERE batchId = {batch_id}""")
+    #     departments = cursor.fetchall()
+    #     for department in departments:
+    #         department_id = department["id"]
+    #         # classes.extend(classesByDepartment(ACADEMIC_YEAR_ID, department_id))
 
-    classes.extend(classesByDepartment(academic_year_id, department_id))
+    classes.extend(classesByDepartment(department_id))
     final = {"ClassroomTypes": getClassroomTypes(ACADEMIC_YEAR_ID), "Classes": classes}
 
     file = './test_files/ulaz3.json'
