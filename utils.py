@@ -184,8 +184,8 @@ def write_solution_to_file(matrix, data, filled, filepath, groups_empty_space, t
             f.write(' {}'.format(hours[time[0] % len(hours)]))
     f.close()
 
-def insert_into_database(matrix, data, filled, filepath, groups_empty_space, teachers_empty_space, subjects_order, days, hours):
-    ACADEMIC_YEAR_ID = 1
+def insert_into_database(matrix, data, filled, filepath, groups_empty_space, teachers_empty_space, subjects_order, days, hours, department_id, academic_year_id):
+
     # insert into database logic below
     # Establish a connection
     cnx = mysql.connector.connect(user='root', password='Pranav18',
@@ -194,7 +194,17 @@ def insert_into_database(matrix, data, filled, filepath, groups_empty_space, tea
 
     # Create a cursor object
     cursor = cnx.cursor(dictionary=True)
-    cursor.execute("DELETE FROM slotDatas")
+
+    # Selecting subdivions of the department
+    cursor.execute(f"""SELECT id FROM Subdivision 
+                    WHERE DivisionId IN (SELECT id FROM Division WHERE DepartmentId={department_id});""")
+    subdivision_ids = cursor.fetchall()
+    subdivision_ids = [str(subdivision["id"]) for subdivision in subdivision_ids]
+    sql_subdivisions = ', '.join(subdivision_ids)
+
+    cursor.execute(f"""DELETE SD FROM SlotDatas SD
+                INNER JOIN SlotDataSubdivisions SB ON SD.id = SB.SlotDataId
+                WHERE SubdivisionId IN ({sql_subdivisions});""")
 
     groups_dict = {}
     for group_name, group_index in data.groups.items():
@@ -214,10 +224,10 @@ def insert_into_database(matrix, data, filled, filepath, groups_empty_space, tea
         classroom_id = room[:room.rfind('-')] # removing room_type from end
         day_number = days[times[0][0] // len(hours)]
         hour_numbers = [hours[time[0] % len(hours)] for time in times]
-        print(f"Day: {day_number}\t Hours: {hour_numbers}\t Teacher: {teacher_id}\t Subject: {subject_id}\t Classroom: {classroom_id}\t Groups: {group_ids}")
+        # print(f"Day: {day_number}\t Hours: {hour_numbers}\t Teacher: {teacher_id}\t Subject: {subject_id}\t Classroom: {classroom_id}\t Groups: {group_ids}")
 
         for hour in hour_numbers:
-            cursor.execute(f"""SELECT id, day, number, AcademicYearId FROM Slot WHERE AcademicYearId = {ACADEMIC_YEAR_ID} AND day = {day_number} AND number = {hour}""")
+            cursor.execute(f"""SELECT id, day, number, AcademicYearId FROM Slot WHERE AcademicYearId = {academic_year_id} AND day = {day_number} AND number = {hour}""")
             slot_id = cursor.fetchall()[0]["id"]
             cursor.execute(f"""
                 INSERT INTO SlotDatas (SlotId, TeacherId, SubjectId )

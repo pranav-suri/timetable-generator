@@ -39,7 +39,7 @@ Constraints `1` and `2` must be met, while the `3rd` limit is "soft" and allowed
 ### Solution
 
 The algorithm for the timetable is represented as table with its columns as classrooms and rows allowed times for classes, while the elements of the table are the specific class held in proper classroom and given time. 
-Table is a matrix with dimensions 60 x number of classrooms, where 60 corresponds to total number of possible times during the week (5 workdays, 12 hours a day). 
+Table is a matrix with dimensions (number of workdays x number of hours a day) x number of classrooms. Eg. 5 days a week with 8 hours a day will he 40 x number of classrooms matrix.
 
 Element of matrix can be empty if there is no teaching held in given time and classroom or it can contain appropriate class index. 
 <br />Index of the class is determined by: *teachers’ name*, *subject*, *type* (lectures, exercises or laboratory exercises), *duration*, *allowed classrooms* and *groups*. 

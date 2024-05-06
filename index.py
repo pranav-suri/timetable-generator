@@ -1,25 +1,30 @@
 import mysql.connector
 import json
 
-cnx = mysql.connector.connect(user='root', password='Pranav18',
+cnx = mysql.connector.connect(user='root', password='',
                                host='localhost',
                                database='timetable_manager')
 # Create a cursor object
 cursor = cnx.cursor(dictionary=True)
 
-ACADEMIC_YEAR_ID = 1
-
-def getClassroomTypes(academic_year_id):
+def getClassroomTypes(academic_year_id, department_id, cursor, no_of_classrooms=2):
     cursor.execute(f"""
     SELECT c.id, c.classroomName, c.isLab
-    FROM classroom c WHERE c.academicYearId = {academic_year_id}
+    FROM classroom c WHERE c.academicYearId = {academic_year_id} AND c.isLab = 1
+    LIMIT {no_of_classrooms} OFFSET {no_of_classrooms*department_id}
             """)
-
-    classrooms = cursor.fetchall()
+    labs = cursor.fetchall()
+    cursor.execute(f"""
+    SELECT c.id, c.classroomName, c.isLab
+    FROM classroom c WHERE c.academicYearId = {academic_year_id} AND c.isLab = 0
+    LIMIT {no_of_classrooms} OFFSET {no_of_classrooms*department_id}
+            """)
+    notLabs = cursor.fetchall()
     ClassroomTypes = {
             "Lab": [],
             "notLab": [],
     }
+    classrooms = labs + notLabs
     for classroom in classrooms:
         if classroom["isLab"]:
             ClassroomTypes["Lab"].append(str(classroom['id']))
@@ -27,7 +32,7 @@ def getClassroomTypes(academic_year_id):
             ClassroomTypes["notLab"].append(str(classroom['id']))
     return ClassroomTypes
 
-def classesByDepartment(department_id):
+def classesByDepartment(department_id, cursor):
     cursor.execute(f"""SELECT s.id FROM subject s WHERE s.departmentId = {department_id} """)
     subjects = cursor.fetchall()
     subjectIds = [subject["id"] for subject in subjects]
@@ -225,11 +230,10 @@ def classesByDepartment(department_id):
     
     return modified_classes
 
-
-def data(department_id=2):
-
+def data(department_id, academic_year_id, cursor, no_of_classrooms=2):
+    
     classes = []
-    # cursor.execute(f"""SELECT id FROM batch WHERE academicYearId = {ACADEMIC_YEAR_ID}""")
+    # cursor.execute(f"""SELECT id FROM batch WHERE academicYearId = {academic_year_id}""")
     # batches = cursor.fetchall()
     # for batch in batches:
     #     batch_id = batch["id"]
@@ -237,10 +241,10 @@ def data(department_id=2):
     #     departments = cursor.fetchall()
     #     for department in departments:
     #         department_id = department["id"]
-    #         # classes.extend(classesByDepartment(ACADEMIC_YEAR_ID, department_id))
+    #         # classes.extend(classesByDepartment(academic_year_id, department_id))
 
-    classes.extend(classesByDepartment(department_id))
-    final = {"ClassroomTypes": getClassroomTypes(ACADEMIC_YEAR_ID), "Classes": classes}
+    classes.extend(classesByDepartment(department_id, cursor))
+    final = {"ClassroomTypes": getClassroomTypes(academic_year_id, department_id, cursor, no_of_classrooms), "Classes": classes}
 
     file = './test_files/ulaz3.json'
 
@@ -251,4 +255,7 @@ def data(department_id=2):
     print("data added")
     return 1
 
+if __name__ == "__main__":
+    data(1, 1)
+    # Close the cursor
 # Close the connection

@@ -188,7 +188,7 @@ def evolutionary_algorithm(matrix, data, free, filled, groups_empty_space, teach
     It uses (1+1) evolutionary strategy with Stifel's notation.
     """
     n = 3
-    sigma = 2
+    sigma = 2     #mutation rate
     run_times = 5
     max_stagnation = 200
 
@@ -245,13 +245,13 @@ def evolutionary_algorithm(matrix, data, free, filled, groups_empty_space, teach
               ' {}'.format(t, loss_after, cost_teachers, cost_groups, cost_classrooms))
 
 
-def simulated_hardening(matrix, data, free, filled, groups_empty_space, teachers_empty_space, subjects_order, file, days, hours):
+def simulated_hardening(matrix, data, free, filled, groups_empty_space, teachers_empty_space, subjects_order, file, days, hours, department_id, academic_year_id):
     """
     Algorithm that uses simulated hardening with geometric decrease of temperature to optimize timetable by satisfying
     soft constraints as much as possible (empty space for groups and existence of an hour in which there is no classes).
     """
     # number of iterations
-    iter_count = 2500
+    iter_count = 100
     # temperature
     t = 0.5
     _, _, curr_cost_group = empty_space_groups_cost(groups_empty_space, days, hours)
@@ -302,10 +302,10 @@ def simulated_hardening(matrix, data, free, filled, groups_empty_space, teachers
     print('STATISTICS AFTER HARDENING')
     show_statistics(matrix, data, subjects_order, groups_empty_space, teachers_empty_space, days, hours)
     write_solution_to_file(matrix, data, filled, file, groups_empty_space, teachers_empty_space, subjects_order, days, hours)
-    insert_into_database(matrix, data, filled, file,groups_empty_space, teachers_empty_space, subjects_order, days, hours)
+    insert_into_database(matrix, data, filled, file,groups_empty_space, teachers_empty_space, subjects_order, days, hours, department_id, academic_year_id)
 
 
-def main():
+def main(department_id, academic_year_id):
     """
     free = [(row, column)...] - list of free fields (row, column) in matrix
     filled: dictionary where key = index of the class, value = list of fields in matrix
@@ -334,9 +334,8 @@ def main():
     evolutionary_algorithm(matrix, data, free, filled, groups_empty_space, teachers_empty_space, subjects_order, days, hours)
     print('STATISTICS BEFORE HARDENING')
     show_statistics(matrix, data, subjects_order, groups_empty_space, teachers_empty_space, days, hours)
-    simulated_hardening(matrix, data, free, filled, groups_empty_space, teachers_empty_space, subjects_order, file, days, hours)
+    simulated_hardening(matrix, data, free, filled, groups_empty_space, teachers_empty_space, subjects_order, file, days, hours, department_id, academic_year_id)
 
 
-if __name__ == '__main__':
-    
+if __name__ == '__main__': 
     main()
