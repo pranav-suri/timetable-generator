@@ -323,8 +323,8 @@ def main(department_id, academic_year_id):
     groups_empty_space = {}
     teachers_empty_space = {}
     file = 'ulaz3.json'
-    days = ["1", "2", "3", "4", "5"]
-    hours = [1,2,3,4,5,6,7,8]
+    days = ["1", "2", "3", "4", "5", "6"]
+    hours = [1,2,3,4,6,7,8]
     data = load_data('test_files/' + file, teachers_empty_space, groups_empty_space, subjects_order)
     matrix, free = set_up(len(data.classrooms), days, hours)
     initial_population(data, matrix, free, filled, groups_empty_space, teachers_empty_space, subjects_order, days, hours)
